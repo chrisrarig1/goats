@@ -15,7 +15,7 @@ let image2 = document.querySelector('section img:nth-child(2)');
 let image3 = document.querySelector('section img:nth-child(3)');
 let views = 0;
 let clicks = 0;
-let maxclicks = 6;
+let maxclicks = 25;
 
 
 function Goats(name,fileExt = 'jpg'){
@@ -60,6 +60,7 @@ function renderGoats(){
     goat1.views++;
     goat2.views++;
     goat3.views++;
+    document.getElementById("mybutton").disabled = true;
 }
 
 function goatclicker(event){
@@ -78,9 +79,7 @@ function goatclicker(event){
     if (clicks === maxclicks){
         document.getElementById("mybutton").disabled = false;
         myContainer.removeEventListener('click', goatclicker);
-    } else{
-        document.getElementById("mybutton").disabled = true;
-    }
+    } 
 }
 console.log(theGoats);
 ///render results in an UL
