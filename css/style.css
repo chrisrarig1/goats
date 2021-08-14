@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: rgb(246, 230, 4);
+    border-style: dotted;
+    border-width: 0.5rem;
+    width:100%;
+}
+
+body{
+    width: 960px;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 2rem;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+
+button{
+    width: 100px;
+    height: 70px;
+    margin: 2rem;
+    color: darkred;
+    background-color: darkgreen;
+
+}
